@@ -1,0 +1,31 @@
+.about
+  display: flex
+  padding-top: 6rem
+  padding-bottom: 6rem
+  background: $white url(../img/background-about.jpg) center no-repeat
+  background-size: cover
+  &-flex
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap-reverse
+  &-food
+    max-width: 50rem
+    text-align: center
+    h2
+      color: $gold
+    p
+      font-size: 1.6rem
+      text-align: center
+      color: $gray
+    &-cook
+      padding-left: 7.8rem
+  &-image img
+    width: 60rem
+
+//Media for about
+@media (max-width: 1200px)
+  .about-food
+    max-width: 80rem
+  .about-image
+    display: none

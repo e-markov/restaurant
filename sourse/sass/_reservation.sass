@@ -1,0 +1,76 @@
+.reservation
+  display: flex
+  padding-top: 6rem
+  padding-bottom: 6rem
+  background: $white url(../img/background-reservations.jpg) center no-repeat
+  background-size: cover
+  &-flex
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &-food
+    width: 27rem
+    height: 50.7rem
+  &-board
+    display: flex
+    align-items: center
+    flex-direction: column
+    max-width: 42rem
+    text-align: center
+    h2
+      color: $gold
+    p
+      font-size: 1.6rem
+      font-weight: 400
+      color: $gray
+    &-form
+      display: flex
+      align-items: center
+      justify-content: space-around
+      flex-wrap: wrap
+      max-width: 42rem
+      font-size: 1.4rem
+      text-align: left
+      label
+        width: 18rem
+        font-weight: 700
+        margin-bottom: 1.6rem
+        color: $gold
+        input
+          display: block
+          width: 18rem
+          height: 2rem
+          padding: .5rem
+          font-weight: 400
+          background-color: #ffffff3d
+          border: .1rem solid $gray
+          color: $gray
+          outline: none
+          &:focus
+            border: .1rem solid $gold
+          &::-moz-placeholder
+            font-style: italic
+          &::-webkit-input-placeholder
+            font-style: italic
+            margin-left: .5rem
+      button
+        width: 18rem
+        height: 3.4rem
+        color: $white
+        background-color: $gold
+        border: none
+
+//Media for reservation
+@media (max-width: 992px) 
+  .reservation
+    &-board
+      max-width: 66rem
+    &-food
+      display: none
+
+@media (max-width: 496px)
+  .reservation
+    &-board
+      &-form
+        label input
+          width: 16rem

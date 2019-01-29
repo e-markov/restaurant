@@ -1,0 +1,20 @@
+section.reservation.logo-gold#reservation
+  .container.reservation-flex
+    .reservation-food
+      img(src="img/food-a.jpg", alt="food")
+    .reservation-food
+      img(src="img/food-b.jpg", alt="food")
+    .reservation-board
+      h2 Лучшие ингредиенты
+      img.decoration(src="img/decoration-gold.svg", alt="decoration")
+      p Если вы побывали в одном из наших ресторанов, вы видели - и постились - что заставляет наших клиентов возвращаться еще. <br> Прекрасные материалы и свежеиспеченная еда, вкусные лямбда-торты, кексы и кофе для гурманов заставляют нас сопротивляться! <br> Зайдите сегодня и проверьте нас!
+      form.reservation-board-form
+        label(for="name", action="#") Имя
+          input(type="text", name="name", placeholder="Ваше имя *" required)
+        label(for="email") eMail
+          input(type="email", name="email", placeholder="Ваш eMail *" required)
+        label(for="date") Дата
+          input(type="date", name="date", placeholder="Дата бронирования *" required)
+        label(for="time",) Время
+          input(type="time", name="time", placeholder="Время *" required)
+        button Забронировать

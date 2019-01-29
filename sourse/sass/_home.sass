@@ -1,0 +1,73 @@
+.home
+  display: flex
+  align-items: center
+  justify-content: center
+  min-height: 70rem
+  background: $gray url(../img/background-home.jpg) center no-repeat
+  background-size: cover
+  &-flex
+    display: flex
+    justify-content: center
+    flex-direction: column
+  &-decoration
+    display: flex
+    justify-content: center
+    margin-bottom: 4rem
+    img
+     width: 25rem
+  &-title
+    display: flex
+    justify-content: center
+    opacity: 0
+    h1
+      font-family: $header
+      font-size: 7rem
+      font-weight: 400
+      text-align: center
+      color: $white
+  &-buttom
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+    a
+      width: 22.8rem
+      height: 5.7rem
+      margin: 1rem 2rem
+      font-size: 1.8rem
+      text-align: center
+      text-transform: uppercase
+      line-height: 5.7rem
+      border-radius: .2rem
+      color: $white
+      text-decoration: none
+      transition: .6s
+      &:hover
+        background-color: rgba(204, 153, 0, 0.7)
+        border: .1rem solid $gold
+    &-table
+      background-color: rgba(0, 0, 0, 0.7)
+      border: .1rem solid $black
+    &-menu
+      background-color: rgba(255, 255, 255, 0.28)
+      border: .1rem solid $white
+
+//Media for home
+@media (max-width: 992px)
+  .home
+    &-title
+      h1
+        font-size: 5.4rem
+
+@media (max-width: 768px)
+  .home
+    &-title
+      h1
+        font-size: 4.6rem
+  
+@media (max-width: 496px)
+  .home
+    &-title
+      h1
+        font-size: 4rem
